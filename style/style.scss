@@ -1,0 +1,299 @@
+@import "./animate.scss";
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+}
+
+.mount {
+    position: absolute;
+    z-index: 23;
+    width: 100%;
+    margin-top: 40vh;
+    height: 100vh;
+
+    img {
+        bottom: 0%;
+    }
+}
+
+// first section
+
+.page1 {
+    overflow: hidden;
+    z-index: 3;
+    background-image: linear-gradient(rgba(158, 109, 70, 0) 0%, rgba(158, 109, 70, 1) 100%), url(../images/mountain.jpg);
+    align-self: center;
+    width: 100%;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+
+    // top links
+    .links_cont {
+        display: flex;
+        width: 100%;
+        // padding-inline: 20px;
+        height: 50px;
+        color: white;
+        align-items: center;
+        justify-content: space-between;
+
+        // permac
+        .logo {
+            font-size: 30px;
+            line-height: 0;
+            font-family: 'DM Serif Display', serif;
+            margin-left: 10%;
+
+            &:hover {
+                color: rgba(116, 73, 37, 0.9);
+            }
+        }
+
+        .account {
+            &:hover {
+                color: rgba(116, 73, 37, 0.9);
+            }
+
+            margin-right: 10%;
+        }
+
+        // links
+        ul {
+            list-style-type: none;
+            display: flex;
+            width: 40%;
+            justify-content: space-between;
+
+            li a {
+                color: white;
+                text-decoration: none;
+
+                &:hover {
+                    color: rgba(198, 128, 71, 0.9);
+                }
+                &:active{
+                    color: #e08d49;
+                }
+                &:focus{
+                    color: #f3964a;
+                }
+            }
+        }
+
+    }
+
+    .page1_main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+
+        p.me {
+            z-index: 3;
+            font-size: 30px;
+            letter-spacing: 8px;
+            display: flex;
+            margin-top: -60vh;
+            z-index: 56;
+            text-align: left;
+            align-items: center;
+            position: absolute;
+            margin-left: -30%;
+            margin-right: auto;
+            gap: 30px;
+            color: rgb(46, 23, 4);
+        }
+
+        p::before {
+            width: 100px;
+            z-index: 3345;
+            height: 5px;
+            background-color: rgb(67, 35, 8);
+            content: "";
+            display: block;
+        }
+
+        div.main {
+            font-size: 7vw;
+            z-index: 234545676;
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            position: absolute;
+            width: 70%;
+            text-align: center;
+
+            span.under {
+                z-index: 23;
+            }
+        }
+
+        .scroll {
+            margin-left: 15%;
+            position: absolute;
+            z-index: 12334;
+            color: white;
+            margin-top: 70vh;
+            font-size: 20px;
+            margin-right: auto;
+
+            i {
+                animation: bounce 2s infinite;
+                z-index: 12334;
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+// page 2
+
+.page2 {
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(rgba(158, 109, 70, 1) 0%, rgba(158, 109, 70, 0.9));
+    justify-content: space-between;
+    gap: 40px;
+    align-self: center;
+    flex-wrap: wrap;
+    padding-top: 100px;
+    display: flex;
+
+    div {
+        width: 500px;
+        margin-left: 80px;
+    }
+
+    .pg2_img {
+        width: 450px;
+        height: 100vh;
+        margin-right: 80px;
+        background-image: linear-gradient(rgba(158, 109, 70, 0.3), rgba(158, 109, 70, 0.2)), url("../images/pg2.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+
+    .sec1 {
+        .article {
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            color: rgb(46, 23, 4);
+        }
+
+        p.article::before {
+            width: 100px;
+            height: 5px;
+            background-color: rgb(67, 35, 8);
+            content: "";
+            display: block;
+        }
+
+        div {
+            color: white;
+            font-size: 5vw;
+            font-weight: 100;
+            margin: 0%;
+            margin-right: auto;
+
+        }
+
+        .small {
+            font-size: 17px;
+            line-height: 2;
+            color: white;
+        }
+
+        div.rdmore {
+            font-size: 20px;
+            color: rgb(27, 13, 2);
+        }
+    }
+
+
+
+
+}
+
+section.page3 {
+    width: 100%;
+    height: auto;
+    background-color: #a67a56;
+    gap: 40px;
+    flex-wrap: wrap;
+    align-self: center;
+    padding-top: 100px;
+    display: flex;
+
+    div {
+        width: 500px;
+        margin-left: 80px;
+    }
+
+    .pg3_img {
+        width: 450px;
+        height: 100vh;
+        margin-left: 80px;
+        background-image: linear-gradient(rgba(158, 109, 70, 0.3), rgba(158, 109, 70, 0.2)), url("../images/pg3.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .sec2 {
+        .article {
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            color: rgb(46, 23, 4);
+        }
+
+        p.article::before {
+            width: 100px;
+            height: 5px;
+            background-color: rgb(67, 35, 8);
+            content: "";
+            display: block;
+        }
+
+        div {
+            color: white;
+            font-size: 5vw;
+            font-weight: 100;
+            margin: 0%;
+            margin-left: auto;
+
+        }
+
+        .small {
+            font-size: 17px;
+            line-height: 2;
+            color: white;
+        }
+
+        div.rdmore {
+            font-size: 20px;
+            color: rgb(27, 13, 2);
+        }
+    }
+
+    .pg4_img {
+        background-image: linear-gradient(rgba(158, 109, 70, 0.3), rgba(158, 109, 70, 0.2)), url("../images/pg4.jpg");
+    }
+}
